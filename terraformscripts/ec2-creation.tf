@@ -1,11 +1,11 @@
-provider "aws"{
+Provider "aws"{
 region="ap-south-1"
 }
 
 resource "aws_instance" "AWSEC2"{
-ami = "ami-001843b876406202a"
+ami = "ami-013e83f579886baeb"
 instance_type = "t2.micro"
-key_name= "devopsdecbatchmss"
+key_name= "devopsjan2023"
 security_groups = ["launch-wizard-2"]
 tags = {
 Name = "terraformserver"
